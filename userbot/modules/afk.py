@@ -22,29 +22,29 @@ except AttributeError:
 
 # ========================= CONSTANTS ============================
 AFKSTR = [
-    "I'm busy right now. Please talk in a bag and when I come back you can just give me the bag!",
-    "I'm away right now. If you need anything, leave a message after the beep:\n`beeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeep`!",
-    "You missed me, next time aim better.",
-    "I'll be back in a few minutes and if I'm not...,\nwait longer.",
-    "I'm not here right now, so I'm probably somewhere else.",
-    "Roses are red,\nViolets are blue,\nLeave me a message,\nAnd I'll get back to you.",
-    "Sometimes the best things in life are worth waiting for…\nI'll be right back.",
-    "I'll be right back,\nbut if I'm not right back,\nI'll be back later.",
-    "If you haven't figured it out already,\nI'm not here.",
+    "Sono occupato",
+    "Non sono al computer adesso, scrivi un messaggio dopo il beep!:\n`beeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeep`!",
+    "Mi hai mancato, la prossima volta mira meglio! (sono offline)",
+    "Tornerò tra pochi minuti e se non sarà così,\naspetta di più.",
+    "Non sono qui adesso, quindi probabilmente sono da un altra parte",
+    "Le rose sono rosse,\nLe viole sono blu,\nLasciami un messaggio,\nE tornerò da te",
+    "Alcune volte per le cose migliori della vita vale la pena aspettare…\nTorno subito!",
+    "Tornerò,\nma se non tornerò,\nTornerò più tardi.",
+    "Se non te ne sei già accorto,\nNon sono qui.",
     "Hello, welcome to my away message, how may I ignore you today?",
-    "I'm away over 7 seas and 7 countries,\n7 waters and 7 continents,\n7 mountains and 7 hills,\n7 plains and 7 mounds,\n7 pools and 7 lakes,\n7 springs and 7 meadows,\n7 cities and 7 neighborhoods,\n7 blocks and 7 houses...\n\nWhere not even your messages can reach me!",
-    "I'm away from the keyboard at the moment, but if you'll scream loud enough at your screen, I might just hear you.",
-    "I went that way\n---->",
-    "I went this way\n<----",
-    "Please leave a message and make me feel even more important than I already am.",
-    "I am not here so stop writing to me,\nor else you will find yourself with a screen full of your own messages.",
-    "If I were here,\nI'd tell you where I am.\n\nBut I'm not,\nso ask me when I return...",
-    "I am away!\nI don't know when I'll be back!\nHopefully a few minutes from now!",
-    "I'm not available right now so please leave your name, number, and address and I will stalk you later.",
-    "Sorry, I'm not here right now.\nFeel free to talk to my userbot as long as you like.\nI'll get back to you later.",
-    "I bet you were expecting an away message!",
-    "Life is so short, there are so many things to do...\nI'm away doing one of them..",
-    "I am not here right now...\nbut if I was...\n\nwouldn't that be awesome?",
+    "Sono lontano 7 mari e 7 continenti,\n7 montangne e 7 colline,\n7 pianure e...\n\nI tuoi messaggi non possono neanche raggiungermi!",
+    "Sono lontano dalla tastiera al momento, ma se urli al tuo schermo, forse posso sentirti",
+    "Sono offline",
+    "Sono offline",
+    "Lasci un messaggio e fammi sentire più importante di quanto sono!(sono offline)",
+    "Non sono qui, quindi smetti di scrivere,\nAltrimenti troverai uno schermo pieno di tuoi messaggi",
+    "Sono offline!",
+    "Sono offline!",
+    "Non sono disponibile adesso, quindi lascia il tuo nome e numero.",
+    "Scusa, non sono qui ora\nPuoi parlare al mio userbot quanto vuoi!\nTornerò tra poco",
+    "Sono offline dio c",
+    "La vita è breve, e ci sono tante cose belle da fare!\nSe sono offline probabilmente mi sto divertendo",
+    "Non sono qui\nma se lo fossi...\n\nnon sarebbe meraviglioso????",
 ]
 # =================================================================
 
@@ -153,7 +153,7 @@ async def set_afk(afk_e):
         await afk_e.edit(f"Going AFK!\
         \nReason: `{string}`")
     else:
-        await afk_e.edit("`Going away from Virtual World !!`")
+        await afk_e.edit("`Sto andando afk!! !!`")
     if BOTLOG:
         await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nYou went AFK!")
     if afk_db:
